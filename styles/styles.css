@@ -1,10 +1,118 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Shared styles */
+.display-flex {
+  display: flex;
+}
+.navbar, .banner, .teams{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.text-dark{
+  color: #131313;
+}
+.text-gray{
+  color: #424242;
+}
+.text-gray-light{
+  color: #727272;
+}
+.bg-light{
+  background-color: rgb(255, 144, 14, 10%);
+}
+main > section {
+  padding-top: 130px;
+}
+.btn-primary{
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+/* Shared styles */
+
+
+/* Header styles */
+.navbar{
+justify-content: space-between;
+align-items: center;
+}
+.brand{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.nav-links{
+  list-style: none;
+}
+.nav-item{
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link{
+   text-decoration: none;
+}
+.banner-content{
+  max-width: 865px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description{
+  font-size: 16px;
+  line-height: 26px;
+}
+.banner-image{
+  width: 100%;
+}
+
+/* Main section design */
+.teams{
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-features{
+  max-width: 537px;
+  margin-left: 73px;
+  border-radius: 8px;
+}
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick-list{
+  font-weight: 500;
+}
+
+
+/* Responsive Media query */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
 }
